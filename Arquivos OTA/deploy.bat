@@ -1,6 +1,7 @@
 @echo off
 
 echo ========= DEPLOY OTA =========
+timeout /t 2 >nul
 
 REM === CAMINHO DO BIN ===
 set BIN_PATH=C:\Users\Gemeos\Documents\Arduino\ESP32_TEMPLATE\ESP32_TEMPLATE\build\esp32.esp32.esp32doit-devkit-v1\ESP32_TEMPLATE.ino.bin
