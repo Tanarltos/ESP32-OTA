@@ -14,7 +14,7 @@ echo Copiando firmware...
 copy "%BIN_PATH%" "%REPO%\firmware.bin" /Y
 
 REM === GERAR VERSAO AUTOMATICA ===
-for /f %%i in ('powershell -command "Get-Date -Format yyyyMMddHHmmss"') do set VERSAO=%%i
+for /f %%i in ('powershell -command "Get-Date -Format yyyy.MM.dd-HH:mm"') do set VERSAO=%%i
 echo %VERSAO% > "%REPO%\version.txt"
 
 REM === SUBIR PARA GITHUB ===
