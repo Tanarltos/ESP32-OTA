@@ -19,9 +19,9 @@ echo %VERSAO% > "%REPO%\version.txt"
 
 REM === SUBIR PARA GITHUB ===
 cd /d "%REPO%"
-git pull --rebase
 git add .
 git commit -m "OTA update %VERSAO%"
+git pull --rebase
 git push
 
 echo ========= FINALIZADO =========
