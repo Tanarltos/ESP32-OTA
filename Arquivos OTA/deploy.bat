@@ -25,4 +25,3 @@ git pull --rebase
 git push
 
 echo ========= FINALIZADO =========
-pause
